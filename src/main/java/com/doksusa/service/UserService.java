@@ -1,8 +1,10 @@
-package com.doksusa.dao;
+package com.doksusa.service;
 
 import java.util.List;
 
-public interface UserDAO {
+import com.doksusa.dao.UserDAO;
+
+public interface UserService {
 
 	public List<UserDAO> user_selectAll();
 
