@@ -6,6 +6,7 @@ public class controller2 {
 		// TODO Auto-generated method stub
 		System.out.println("이윤경 바보야");
 		System.out.println("이윤경 바보야");
+		System.out.println("이윤경 바보야");
 	}
 
 }
