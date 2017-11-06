@@ -7,6 +7,8 @@ public class controller2 {
 		System.out.println("이윤경 바보야");
 		System.out.println("이윤경 바보야");
 		System.out.println("이윤경 바보야");
+		System.out.println("이윤경 바보야");
+		System.out.println("이윤경 바보야");
 	}
 
 }
