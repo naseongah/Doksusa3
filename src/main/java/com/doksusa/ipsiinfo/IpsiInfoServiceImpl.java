@@ -1,12 +1,10 @@
-package com.doksusa.service;
+package com.doksusa.ipsiinfo;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-
-import com.doksusa.dao.IpsiInfoDAO;
 
 @Service("ipsiService")
 public class IpsiInfoServiceImpl implements IpsiInfoService {

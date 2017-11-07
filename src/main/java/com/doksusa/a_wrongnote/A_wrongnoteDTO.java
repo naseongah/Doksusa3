@@ -1,4 +1,4 @@
-package com.doksusa.dto;
+package com.doksusa.a_wrongnote;
 
 public class A_wrongnoteDTO {
 	int a_num;

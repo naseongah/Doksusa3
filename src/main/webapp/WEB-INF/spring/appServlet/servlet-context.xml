@@ -22,7 +22,7 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
-	<context:component-scan base-package="com.doksusa.app,com.doksusa.dao,com.doksusa.dto,com.doksusa.service" />
+	<context:component-scan base-package="com.doksusa.a_solution,com.doksusa.a_wrongnote,com.doksusa.app,com.doksusa.aptitude,com.doksusa.comment,com.doksusa.community,com.doksusa.content,com.doksusa.e_solution,com.doksusa.e_wrongnote,com.doksusa.exam,com.doksusa.foreword,com.doksusa.ipsiinfo,com.doksusa.manager,com.doksusa.user" />
 	
 	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/myoracle"
 		resource-ref="true" />

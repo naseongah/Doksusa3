@@ -1,8 +1,6 @@
-package com.doksusa.service;
+package com.doksusa.user;
 
 import java.util.List;
-
-import com.doksusa.dao.UserDAO;
 
 public interface UserService {
 

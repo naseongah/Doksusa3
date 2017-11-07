@@ -1,4 +1,4 @@
-package com.doksusa.dto;
+package com.doksusa.exam;
 
 public class ExamDTO {
 	

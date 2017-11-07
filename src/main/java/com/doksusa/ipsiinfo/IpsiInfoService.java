@@ -1,8 +1,6 @@
-package com.doksusa.service;
+package com.doksusa.ipsiinfo;
 
 import java.util.List;
-
-import com.doksusa.dao.IpsiInfoDAO;
 
 public interface IpsiInfoService {
 

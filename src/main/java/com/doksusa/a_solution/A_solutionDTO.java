@@ -1,4 +1,4 @@
-package com.doksusa.dto;
+package com.doksusa.a_solution;
 
 public class A_solutionDTO {
 	int a_num;

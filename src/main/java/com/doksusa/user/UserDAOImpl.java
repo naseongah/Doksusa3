@@ -1,4 +1,4 @@
-package com.doksusa.dao;
+package com.doksusa.user;
 
 import java.util.HashMap;
 import java.util.List;
