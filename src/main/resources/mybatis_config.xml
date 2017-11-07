@@ -7,7 +7,8 @@
 		<setting name="logImpl" value="log4j"/>
 	</settings>
 	<typeAliases>
-		<typeAlias alias="userdto" type="com.doksusa.dto.UserDTO"/>
-		<typeAlias alias="ipsidto" type="com.doksusa.dto.IpsiInfoDTO"/>
+		<typeAlias alias="userdto" type="com.doksusa.user.UserDTO"/>
+		<typeAlias alias="ipsidto" type="com.doksusa.ipsiinfo.IpsiInfoDTO"/>
+		<typeAlias alias="asdto" type="com.doksusa.a_solution.A_solutionDTO"/>
 	</typeAliases>
 </configuration>
