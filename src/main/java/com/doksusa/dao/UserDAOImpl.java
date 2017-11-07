@@ -32,8 +32,8 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public int user_update(UserDAO userdao) {
-		return session.insert(namespace + "user_update", userdao);
+	public int user_update(String u_pw) {
+		return session.insert(namespace + "user_update", u_pw);
 	}
 
 	@Override

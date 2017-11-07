@@ -33,8 +33,8 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public int user_update(UserDAO userdao) {
-		return user.user_update(userdao);
+	public int user_update(String u_pw) {
+		return user.user_update(u_pw);
 	}
 
 	@Override
