@@ -15,23 +15,23 @@ public class IpsiInfoDAOImpl implements IpsiInfoDAO{
 	String namespace = "com.doksusa.ipsi.";
 	
 	@Override
-	public List<IpsiInfoDAO> ipsi_selectAll() {
+	public List<IpsiInfoDTO> ipsi_selectAll() {
 		return session.selectList(namespace + "ipsi_selectAll");
 	}
 
 	@Override
-	public IpsiInfoDAO ipsi_select(String university) {
+	public IpsiInfoDTO ipsi_select(String university) {
 		return session.selectOne(namespace + "ipsi_select", university);
 	}
 
 	@Override
-	public List<IpsiInfoDAO> ipsi_selectByKey(String key) {
+	public List<IpsiInfoDTO> ipsi_selectByKey(String key) {
 		return session.selectList(namespace + "ipsi_selectByKey", "%"+key+"%");
 	}
 
 	@Override
-	public int ipsi_insert(IpsiInfoDAO ipsidao) {
-		return session.insert(namespace + "ipsi_insert", ipsidao);
+	public int ipsi_insert(IpsiInfoDTO ipsidto) {
+		return session.insert(namespace + "ipsi_insert", ipsidto);
 	}
 
 	@Override

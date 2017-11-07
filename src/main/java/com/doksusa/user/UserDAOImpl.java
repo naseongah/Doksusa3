@@ -17,18 +17,18 @@ public class UserDAOImpl implements UserDAO {
 	String namespace = "com.doksusa.user.";
 
 	@Override
-	public List<UserDAO> user_selectAll() {
+	public List<UserDTO> user_selectAll() {
 		return session.selectList(namespace + "user_selectAll");
 	}
 
 	@Override
-	public UserDAO user_select(String u_id) {
+	public UserDTO user_select(String u_id) {
 		return session.selectOne(namespace + "user_selectById", u_id);
 	}
 
 	@Override
-	public int user_insert(UserDAO userdao) {
-		return session.insert(namespace + "user_insert", userdao);
+	public int user_insert(UserDTO userdto) {
+		return session.insert(namespace + "user_insert", userdto);
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public UserDAO login(String u_id, String u_pw) {
+	public UserDTO login(String u_id, String u_pw) {
 		Map<String, String> data = new HashMap<String, String>();
 		data.put("u_id", u_id);
 		data.put("u_pw", u_pw);

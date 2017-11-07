@@ -13,13 +13,13 @@ public class A_solutionDAOImpl implements A_solutionDAO{
 	String namespace = "com.doksusa.as.";
 	
 	@Override
-	public A_solutionDAO as_select(int a_num) {
+	public A_solutionDTO as_select(int a_num) {
 		return session.selectOne(namespace + "as_select", a_num);
 	}
 
 	@Override
-	public int as_insert(A_solutionDAO asdao) {
-		return session.insert(namespace + "as_insert", asdao);
+	public int as_insert(A_solutionDTO asdto) {
+		return session.insert(namespace + "as_insert", asdto);
 	}
 
 	@Override

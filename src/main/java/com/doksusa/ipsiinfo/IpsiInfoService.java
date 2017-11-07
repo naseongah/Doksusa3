@@ -4,16 +4,16 @@ import java.util.List;
 
 public interface IpsiInfoService {
 
-	public List<IpsiInfoDAO> ipsi_selectAll();
-
-	public IpsiInfoDAO ipsi_select(String university);
-
-	public List<IpsiInfoDAO> ipsi_selectByKey(String key);
-
-	public int ipsi_insert(IpsiInfoDAO ipsidao);
-
+public List<IpsiInfoDTO> ipsi_selectAll();
+	
+	public IpsiInfoDTO ipsi_select(String university);
+	
+	public List<IpsiInfoDTO> ipsi_selectByKey(String key);
+	
+	public int ipsi_insert(IpsiInfoDTO ipsidto);
+	
 	public int ipsi_update(String university);
-
+	
 	public int ipsi_delete(String university);
 
 }

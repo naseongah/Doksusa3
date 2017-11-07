@@ -12,13 +12,13 @@ public class A_solutionServiceImpl implements A_solutionService {
 	A_solutionDAO as;
 	
 	@Override
-	public A_solutionDAO as_select(int a_num) {
+	public A_solutionDTO as_select(int a_num) {
 		return as.as_select(a_num);
 	}
 
 	@Override
-	public int as_insert(A_solutionDAO asdao) {
-		return as.as_insert(asdao);
+	public int as_insert(A_solutionDTO asdto) {
+		return as.as_insert(asdto);
 	}
 
 	@Override

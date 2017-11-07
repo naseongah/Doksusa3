@@ -16,18 +16,18 @@ public class UserServiceImpl implements UserService{
 	UserDAO user;
 	
 	@Override
-	public List<UserDAO> user_selectAll() {
+	public List<UserDTO> user_selectAll() {
 		return user.user_selectAll();
 	}
 
 	@Override
-	public UserDAO user_select(String u_id) {
+	public UserDTO user_select(String u_id) {
 		return user.user_select(u_id);
 	}
 
 	@Override
-	public int user_insert(UserDAO userdao) {
-		return user.user_insert(userdao);
+	public int user_insert(UserDTO userdto) {
+		return user.user_insert(userdto);
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public UserDAO login(String u_id, String u_pw) {
+	public UserDTO login(String u_id, String u_pw) {
 		return user.login(u_id, u_pw);
 	}
 

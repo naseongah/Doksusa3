@@ -14,23 +14,23 @@ public class IpsiInfoServiceImpl implements IpsiInfoService {
 	IpsiInfoDAO ipsi;
 	
 	@Override
-	public List<IpsiInfoDAO> ipsi_selectAll() {
+	public List<IpsiInfoDTO> ipsi_selectAll() {
 		return ipsi.ipsi_selectAll();
 	}
 
 	@Override
-	public IpsiInfoDAO ipsi_select(String university) {
+	public IpsiInfoDTO ipsi_select(String university) {
 		return ipsi.ipsi_select(university);
 	}
 
 	@Override
-	public List<IpsiInfoDAO> ipsi_selectByKey(String key) {
+	public List<IpsiInfoDTO> ipsi_selectByKey(String key) {
 		return ipsi.ipsi_selectByKey(key);
 	}
 
 	@Override
-	public int ipsi_insert(IpsiInfoDAO ipsidao) {
-		return ipsi.ipsi_insert(ipsidao);
+	public int ipsi_insert(IpsiInfoDTO ipsidto) {
+		return ipsi.ipsi_insert(ipsidto);
 	}
 
 	@Override
