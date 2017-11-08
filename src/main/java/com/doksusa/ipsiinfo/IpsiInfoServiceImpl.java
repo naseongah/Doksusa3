@@ -10,9 +10,12 @@ import org.springframework.stereotype.Service;
 public class IpsiInfoServiceImpl implements IpsiInfoService {
 
 	@Autowired
-	@Qualifier("ipsi")
 	IpsiInfoDAO ipsi;
 	
+	public void setIpsi(IpsiInfoDAO ipsi) {
+		this.ipsi = ipsi;
+	}
+
 	@Override
 	public List<IpsiInfoDTO> ipsi_selectAll() {
 		return ipsi.ipsi_selectAll();
