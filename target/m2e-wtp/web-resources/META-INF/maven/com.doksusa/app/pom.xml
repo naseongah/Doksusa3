@@ -14,7 +14,7 @@
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
 
-<!-- 이 프로젝트에서 사용할 의존성을 받아올 원격 메이븐 저장소 정보 -->
+	<!-- 이 프로젝트에서 사용할 의존성을 받아올 원격 메이븐 저장소 정보 -->
 	<repositories>
 		<repository>
 			<id>codelds</id>
@@ -63,7 +63,7 @@
 			<artifactId>log4jdbc-remix</artifactId>
 			<version>0.2.7</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
