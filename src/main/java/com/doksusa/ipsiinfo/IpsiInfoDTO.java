@@ -4,15 +4,17 @@ public class IpsiInfoDTO {
 
 	String university;
 	String link;
+	String logo;
 
 	public IpsiInfoDTO() {
 		super();
 	}
 
-	public IpsiInfoDTO(String university, String link) {
+	public IpsiInfoDTO(String university, String link, String logo) {
 		super();
 		this.university = university;
 		this.link = link;
+		this.logo = logo;
 	}
 
 	public String getUniversity() {
@@ -31,9 +33,17 @@ public class IpsiInfoDTO {
 		this.link = link;
 	}
 
+	public String getLogo() {
+		return logo;
+	}
+
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+
 	@Override
 	public String toString() {
-		return "IpsiInfoDTO [university=" + university + ", link=" + link + "]";
+		return "IpsiInfoDTO [university=" + university + ", link=" + link + ", logo=" + logo + "]";
 	}
 
 }
