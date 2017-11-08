@@ -10,15 +10,17 @@ import org.springframework.stereotype.Service;
 public class IpsiInfoServiceImpl implements IpsiInfoService {
 
 	@Autowired
+	@Qualifier("ipsi")
 	IpsiInfoDAO ipsi;
 	
-	public void setIpsi(IpsiInfoDAO ipsi) {
-		this.ipsi = ipsi;
-	}
-
 	@Override
 	public List<IpsiInfoDTO> ipsi_selectAll() {
 		return ipsi.ipsi_selectAll();
+	}
+
+	@Override
+	public IpsiInfoDTO ipsi_select(String university) {
+		return ipsi.ipsi_select(university);
 	}
 
 	@Override
@@ -39,11 +41,6 @@ public class IpsiInfoServiceImpl implements IpsiInfoService {
 	@Override
 	public int ipsi_delete(String university) {
 		return ipsi.ipsi_delete(university);
-	}
-
-	@Override
-	public String ipsi_selectLogo(String university) {
-		return ipsi.ipsi_selectLogo(university);
 	}
 
 }

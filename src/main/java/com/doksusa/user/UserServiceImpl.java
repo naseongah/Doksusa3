@@ -10,13 +10,11 @@ import org.springframework.stereotype.Service;
 @Service("userService")
 public class UserServiceImpl implements UserService{
 
+	
 	@Autowired
+	@Qualifier("user")
 	UserDAO user;
 	
-	public void setUser(UserDAO user) {
-		this.user = user;
-	}
-
 	@Override
 	public List<UserDTO> user_selectAll() {
 		return user.user_selectAll();
