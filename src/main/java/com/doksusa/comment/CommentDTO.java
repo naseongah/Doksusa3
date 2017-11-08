@@ -12,6 +12,7 @@ public class CommentDTO {
 	Date u_day;
 	int num;
 	String group;
+	
 	public int getU_num() {
 		return u_num;
 	}
