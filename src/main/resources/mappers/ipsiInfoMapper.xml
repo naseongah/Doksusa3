@@ -6,8 +6,8 @@
 
 	<select id="ipsi_selectAll" resultType="ipsidto">
 		select * from IpsiInfo</select>
-	<select id="ipsi_select" resultType="ipsidto" parameterType="string">
-		select * from IpsiInfo where university=#{university}</select>
+	<select id="ipsi_selectLogo" resultType="string" parameterType="string">
+		select logo from IpsiInfo where university=#{university}</select>
 	<select id="ipsi_selectByKey" resultType="ipsidto" parameterType="string">
 		select * from IpsiInfo where university like #{key}</select>
 	<insert id="ipsi_insert" parameterType="ipsidto">
