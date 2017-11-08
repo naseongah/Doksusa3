@@ -1,4 +1,4 @@
-package com.doksusa.dto;
+package com.doksusa.e_solution;
 
 public class E_solutionDTO {
 	

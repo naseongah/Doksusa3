@@ -1,4 +1,4 @@
-package com.doksusa.dto;
+package com.doksusa.comment;
 
 import java.sql.Date;
 

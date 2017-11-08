@@ -1,4 +1,4 @@
-package com.doksusa.dto;
+package com.doksusa.aptitude;
 
 public class AptitudeDTO {
 	   int a_num;
