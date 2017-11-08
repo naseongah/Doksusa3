@@ -7,12 +7,12 @@
 	<select id="fore_selectAll">
 		select * from foreword</select>
 	<select id="fore_select" parameterType="string">
-		select * from foreword where foreword=#{foreword}</select>
+		select * from foreword where f_foreword=#{f_foreword}</select>
 	<insert id="fore_insert" parameterType="foredto">
-		insert into foreword (foreword) values (#{foreword})</insert>
+		insert into foreword (f_foreword) values (#{f_foreword})</insert>
 	<update id="fore_update" parameterType="foredto">
-		update foreword set foreword=#{foreword}</update>
+		update foreword set f_foreword=#{f_foreword}</update>
 	<delete id="fore_delete" parameterType="string">
-		delete from foreword where foreword=#{foreword}</delete>
+		delete from foreword where f_foreword=#{f_foreword}</delete>
 
 </mapper>
