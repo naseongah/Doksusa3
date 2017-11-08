@@ -5,16 +5,16 @@
 <mapper namespace="com.doksusa.user">
 
 	<select id="user_selectAll" resultType="userdto">
-		select * from user</select>
+		select * from users</select>
 	<select id="user_selectById" resultType="userdto" parameterType="string">
-		select * from user where u_id=#{u_id}</select>
+		select * from users where u_id=#{u_id}</select>
 	<insert id="user_insert" parameterType="userdto">
-		insert into user (u_num,u_id,u_pw,u_nick) values (#{u_num},#{u_id},#{u_pw},#{u_nick})</insert>
+		insert into users (u_num,u_id,u_pw,u_nick) values (#{u_num},#{u_id},#{u_pw},#{u_nick})</insert>
 	<update id="user_update" parameterType="String">
-		update user set u_pw=#{u_pw},u_nick=#{u_nick} where u_pw=#{u_pw}</update>
+		update users set u_pw=#{u_pw},u_nick=#{u_nick} where u_pw=#{u_pw}</update>
 	<delete id="user_delete" parameterType="string">
-		delete from user where u_id=#{u_id}</delete>
+		delete from users where u_id=#{u_id}</delete>
 	<select id="user_login" resultType="userdto" parameterType="map">
-		select * from user where u_id=#{u_id} and  u_pw=#{u_pw}</select>
+		select * from users where u_id=#{u_id} and  u_pw=#{u_pw}</select>
 
 </mapper>

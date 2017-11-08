@@ -10,9 +10,12 @@ import org.springframework.stereotype.Service;
 public class AptitudeServiceImpl implements AptitudeService{
 
 	@Autowired
-	@Qualifier("ap")
 	AptitudeDAO ap;
 	
+	public void setAp(AptitudeDAO ap) {
+		this.ap = ap;
+	}
+
 	@Override
 	public List<AptitudeDTO> ap_selectAll() {
 		return ap.ap_selectAll();
