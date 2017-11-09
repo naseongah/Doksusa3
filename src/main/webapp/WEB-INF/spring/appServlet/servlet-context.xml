@@ -40,15 +40,16 @@
 		</tx:attributes>
 	</tx:advice> <!-- AOP로 biz 로직 범위 지정 + tx매핑 : -->
 	<aop:config>
-		<aop:advisor advice-ref="txAdvice" pointcut="within(lab2.spring.di..*)" />
+		<aop:advisor advice-ref="txAdvice" pointcut="within(com.doksusa.*..*)" />
+		<!-- <aop:advisor advice-ref="txAdvice" pointcut="execution(public * *(..))" 
+			/> -->
 	</aop:config>
-
 
 	<context:component-scan
 		base-package="com.doksusa.a_solution,com.doksusa.a_wrongnote,com.doksusa.app,com.doksusa.aptitude,com.doksusa.comment,com.doksusa.community,com.doksusa.content,com.doksusa.e_solution,com.doksusa.e_wrongnote,com.doksusa.exam,com.doksusa.foreword,com.doksusa.ipsiinfo,com.doksusa.manager,com.doksusa.user" />
 
-	<!-- <jee:jndi-lookup id="dataSource" jndi-name="jdbc/myoracle"
-		resource-ref="true" /> -->
+	<jee:jndi-lookup id="dataSource2" jndi-name="jdbc/myoracle"
+		resource-ref="true" />
 
 	<bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">
 		<constructor-arg ref="dataSource2" />
@@ -59,7 +60,7 @@
 			</bean>
 		</property>
 	</bean>
-
+	
 	<bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
