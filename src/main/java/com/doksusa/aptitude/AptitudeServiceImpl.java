@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 public class AptitudeServiceImpl implements AptitudeService{
 
 	@Autowired
-	@Qualifier("ap")
 	AptitudeDAO ap;
 	
 	@Override

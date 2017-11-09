@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 public class IpsiInfoServiceImpl implements IpsiInfoService {
 
 	@Autowired
-	@Qualifier("ipsi")
 	IpsiInfoDAO ipsi;
 	
 	@Override

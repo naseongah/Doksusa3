@@ -44,20 +44,4 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value="/a")
-	public void test(){
-		try {
-			Connection con = data.getConnection();
-			
-			System.out.println(con);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			
-		}
-		
-		
-	}
-	
 }

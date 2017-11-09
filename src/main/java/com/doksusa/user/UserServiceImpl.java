@@ -12,7 +12,6 @@ public class UserServiceImpl implements UserService{
 
 	
 	@Autowired
-	@Qualifier("user")
 	UserDAO user;
 	
 	@Override
