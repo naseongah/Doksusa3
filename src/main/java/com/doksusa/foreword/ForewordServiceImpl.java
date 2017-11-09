@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 public class ForewordServiceImpl implements ForewordService{
 
 	@Autowired
-	@Qualifier("fore")
 	ForewordDAO fore;
 	
 	@Override

@@ -10,7 +10,7 @@
 		select * from aptitude where a_num=#{a_num}</select>
 	<insert id="ap_insert" parameterType="apdto">
 		insert into aptitude (a_num,a_school,a_year,a_subject,a_subnum,a_answer,a_link) values (#{a_num},#{a_school},#{a_year},#{a_subject},#{a_subnum},#{a_answer},#{a_link})</insert>
-	<update id="ap_update" parameterType="apdtp">
+	<update id="ap_update" parameterType="apdto">
 		update aptitude set a_school=#{a_school},a_year=#{a_year},a_subject=#{a_subject},a_subnum=#{a_subnum},a_answer=#{a_answer},a_link=#{a_link} where a_num=#{a_num}</update>
 	<delete id="ap_delete" parameterType="int">
 		delete from aptitude where a_num=#{a_num}</delete>

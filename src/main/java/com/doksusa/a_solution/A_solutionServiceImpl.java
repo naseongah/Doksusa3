@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 public class A_solutionServiceImpl implements A_solutionService {
 
 	@Autowired
-	@Qualifier("as")
 	A_solutionDAO as;
 	
 	@Override
