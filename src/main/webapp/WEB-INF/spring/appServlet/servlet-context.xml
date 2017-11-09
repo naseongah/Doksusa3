@@ -14,6 +14,8 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
 
+
+
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
 
@@ -32,6 +34,8 @@
 	<bean id=" transactionManager "
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
 		p:dataSource-ref="dataSource" />
+
+
 
 	<!-- tx 반영 로직 범위 설정, tx 기능의 객체와 매핑 :모든 메서드에 적용 -->
 	<tx:advice id="txAdvice" transaction-manager=" transactionManager ">
